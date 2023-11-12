@@ -1,0 +1,78 @@
+
+body {/* custom du site avec couelur, police,espace) */
+    font-family: 'Poppins', sans-serif; 
+    background: linear-gradient(to right, #93003A, #FF5733);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {/*custom de la banniere */
+    background: #1E1E1E;
+    padding: 20px;
+    text-align: center;
+        position: relative;
+    }
+    .benner {
+        width: 100%; /*largeur bannière */
+        height: auto; /* hauteur*/
+        display: block; /* eviter espace sous image */
+    }.titre {
+    color: #FFA500;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+.video-trailer {/* position */
+    text-align: center;
+    padding: 50px;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* cadre 16:9 pour YouTube */
+}
+
+.video-container iframe {/* custom le lien youtube */
+    position: absolute;/* position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+p {/* custom le paragraphe */
+    color: #1E1E1E;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+@media screen and (max-width: 768px) {
+    .video-container {
+        padding-bottom: 75%; /* pour grands ecrans */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-trailer {
+        padding: 20px; /* pour petits ecrans */
+    }
+}
+
+
+
+
+
+
+
+
